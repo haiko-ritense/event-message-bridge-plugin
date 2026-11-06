@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 /*
  * Public API Surface of sample-plugin
  */
 
-export * from "./lib/plugins/sample-plugin/models";
-export * from "./lib/plugins/sample-plugin/sample-plugin-module";
-export * from "./lib/plugins/sample-plugin/sample-plugin.specification";
-export * from "./lib/plugins/sample-plugin/components/sample-plugin-configuration/sample-plugin-configuration.component";
-export * from "./lib/plugins/sample-plugin/components/sample-action-configuration/sample-action-configuration.component";
+export * from "./lib/plugins/event-message-bridge/models";
+export * from "./lib/plugins/event-message-bridge/event-message-bridge-plugin-module";
+export * from "./lib/plugins/event-message-bridge/event-message-bridge-plugin.specification";
+export * from "./lib/plugins/event-message-bridge/components/event-message-bridge-configuration/event-message-bridge-configuration.component";
+export * from "./lib/plugins/event-message-bridge/components/receive-emb-event-configuration/receive-emb-event-configuration.component";

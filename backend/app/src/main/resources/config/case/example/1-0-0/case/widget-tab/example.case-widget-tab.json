@@ -5,7 +5,7 @@
             {
                 "type": "fields",
                 "key": "process-variable-result",
-                "title": "Sample Plugin Result",
+                "title": "Event Message Bridge",
                 "width": 2,
                 "highContrast": true,
                 "properties": {
@@ -21,18 +21,18 @@
                                 }
                             },
                             {
-                                "key": "message",
-                                "title": "Message",
-                                "value": "doc:/message",
+                                "key": "embEventId",
+                                "title": "EMB event",
+                                "value": "doc:/embEventId",
                                 "displayProperties": {
                                     "type": "text",
                                     "hideWhenEmpty": false
                                 }
                             },
                             {
-                                "key": "apiResult",
-                                "title": "API Result",
-                                "value": "doc:/apiResult",
+                                "key": "embEventItemId",
+                                "title": "EMB event item",
+                                "value": "doc:/embEventItemId",
                                 "displayProperties": {
                                     "type": "text",
                                     "hideWhenEmpty": false

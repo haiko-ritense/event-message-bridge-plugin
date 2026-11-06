@@ -1,17 +1,17 @@
 {
-    "name": "sample-plugin",
+    "name": "event-message-bridge",
     "version": 1,
     "backend": [
         {
-            "import": "com.ritense.valtimoplugins:sample-plugin"
+            "import": "com.ritense.valtimoplugins:event-message-bridge"
         }
     ],
     "frontend": {
-        "import": "@valtimo-plugins/sample-plugin",
+        "import": "@valtimo-plugins/event-message-bridge",
         "codeAdditions": [
             {
-                "spec": "samplePluginSpecification",
-                "module": "SamplePluginModule"
+                "spec": "eventMessageBridgePluginSpecification",
+                "module": "EventMessageBridgePluginModule"
             }
         ]
     }

@@ -15,7 +15,7 @@
  */
 
 dockerCompose {
-    setProjectName("sample-plugin")
+    setProjectName("event-message-bridge")
     isRequiredBy(project.tasks.test)
 
     tasks.test {
@@ -29,20 +29,32 @@ val valtimoVersion: String by project
 val operatonVersion: String by project
 
 dependencies {
+    compileOnly("com.ritense.valtimo:authorization")
+    compileOnly("com.ritense.valtimo:case")
+    compileOnly("com.ritense.valtimo:contract")
+    compileOnly("com.ritense.valtimo:core")
     compileOnly("com.ritense.valtimo:plugin-valtimo")
     compileOnly("com.ritense.valtimo:process-document")
-    compileOnly("com.ritense.valtimo:contract")
     compileOnly("org.operaton.bpm:operaton-engine:$operatonVersion")
+
+    compileOnly(kotlin("reflect"))
     compileOnly("org.springframework.boot:spring-boot-autoconfigure")
+    compileOnly("org.springframework.boot:spring-boot-starter-data-jpa")
+    compileOnly("org.springframework.boot:spring-boot-starter-security")
     compileOnly("org.springframework.boot:spring-boot-starter-web")
 
+    compileOnly("com.fasterxml.jackson.core:jackson-databind")
     compileOnly("io.github.oshai:kotlin-logging:$kotlinLoggingVersion")
 
     // Testing
+    testImplementation("com.ritense.valtimo:authorization")
+    testImplementation("com.ritense.valtimo:building-block")
+    testImplementation("com.ritense.valtimo:case")
+    testImplementation("com.ritense.valtimo:contract")
+    testImplementation("com.ritense.valtimo:core")
+    testImplementation("com.ritense.valtimo:local-resource")
     testImplementation("com.ritense.valtimo:plugin-valtimo")
     testImplementation("com.ritense.valtimo:process-document")
-    testImplementation("com.ritense.valtimo:building-block")
-    testImplementation("com.ritense.valtimo:local-resource")
     testImplementation("com.ritense.valtimo:test-utils-common")
 
     testImplementation("org.springframework.boot:spring-boot-starter-web")
