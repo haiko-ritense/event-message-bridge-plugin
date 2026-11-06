@@ -6,14 +6,14 @@
         "formDefinitionName": "start-form-example"
     },
     {
-        "activityId": "time-api-sample-action",
-        "activityType": "bpmn:ServiceTask:start",
+        "activityId": "emb-event-start",
+        "activityType": "bpmn:MessageStartEvent:start",
         "processLinkType": "plugin",
-        "pluginDefinitionKey": "sample-plugin",
-        "pluginActionDefinitionKey": "time-api-sample-action",
+        "pluginDefinitionKey": "event-message-bridge",
+        "pluginActionDefinitionKey": "receive-emb-event",
         "pluginConfigurationId": "4ac9a49f-4aeb-4f91-86d9-853fd95a1b33",
         "actionProperties": {
-            "message": "Hello from the sample plugin!"
+            "eventItemId": "00000000-0000-0000-0000-000000000000"
         }
     }
 ]

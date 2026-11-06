@@ -6,7 +6,7 @@
             "type": "htmlelement",
             "input": false,
             "label": "Instructions",
-            "content": "Start a new example case. The sample plugin will call a Time API during execution.",
+            "content": "Start a new example case by hand. Cases are also started when the Event Message Bridge receives an event for the event item linked to the process's message start event.",
             "tableView": false,
             "refreshOnChange": false
         },

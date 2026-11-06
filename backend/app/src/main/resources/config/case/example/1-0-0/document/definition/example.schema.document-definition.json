@@ -8,13 +8,13 @@
             "type": "string",
             "description": "Name"
         },
-        "apiResult": {
+        "embEventId": {
             "type": "string",
-            "description": "Result from the sample plugin Time API call"
+            "description": "Id of the Event Message Bridge event that started the case"
         },
-        "message": {
+        "embEventItemId": {
             "type": "string",
-            "description": "Message that was set in the plugin action"
+            "description": "Event Message Bridge event item the event was received for"
         }
     }
 }
