@@ -1,7 +1,7 @@
 {
     "name": "@valtimo-plugins/event-message-bridge",
     "license": "EUPL-1.2",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "scripts": {
         "build": "ng build @valtimo-plugins/event-message-bridge",
         "watch": "ng build @valtimo-plugins/event-message-bridge --watch"

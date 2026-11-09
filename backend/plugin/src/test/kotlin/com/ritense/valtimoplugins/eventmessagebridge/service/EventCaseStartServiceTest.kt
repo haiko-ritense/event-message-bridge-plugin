@@ -288,7 +288,7 @@ class EventCaseStartServiceTest : BaseTest() {
         private const val CASE_KEY = "events"
         private const val ACTIVITY_ID = "StartEvent_emb"
         private const val PROCESS_DEFINITION_ID = "verwerk-event:1:1"
-        private const val PROCESS_INSTANCE_ID = "process-instance-1"
+        private var PROCESS_INSTANCE_ID = UUID.randomUUID().toString()
         private val DOCUMENT_ID = JsonSchemaDocumentId.existingId(UUID.fromString("0a6f1b5e-8a0c-4c5e-9c6e-3d7f2b1a9e11"))
     }
 }
