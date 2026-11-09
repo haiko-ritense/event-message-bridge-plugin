@@ -1,4 +1,4 @@
-rootProject.name = "gzac-plugin-template"
+rootProject.name = "event-message-bridge-plugin"
 include(
     "backend",
     "backend:app",

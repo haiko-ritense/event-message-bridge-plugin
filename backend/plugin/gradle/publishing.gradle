@@ -24,7 +24,7 @@ pluginManager.withPlugin("maven-publish") {
 
                 pom {
                     name = "Sample plugin module"
-                    description = "A module containing a sample plugin"
+                    description = "A plugin that starts a case when the Event Message Bridge receives an event"
                     developers {
                         developer {
                             id = "team-valtimo"
